@@ -1,5 +1,10 @@
-# ConsenSys Final Project : Crypto Gifts To Minors Wallet (CGTMWallet)
+# ConsenSys Final Project 2020 : Crypto Gifts To Minors Wallet (CGTMWallet)
 *MultiSig-Ownable-TimeLock Wallet*  
+
+## Description:
+Designed to imitate the 'Uniform Gifts to Minors Act' by using a non-custodial Ethereum smart contract. [(https://www.investopedia.com/terms/u/ugma.asp)]
+
+This smart contract will act as an non-custodial wallet in which Ether can be deposited just by sending Eth to the constract address. The beneficiary of the wallet will only be able to request withdrawals 16 years after this wallet was created and at 18 years the beneficiary can withdraw all the Ether and close the wallet.
 
 ## Stakeholders
 **Owner (Family Member or friend)** : 
@@ -14,11 +19,6 @@
 - Amount of family members are chosen by the owner.
 - Amount of approvals by family members are also chosen by the owner.
 
-## Description:
-Designed to imitate the 'Uniform Gifts to Minors Act' by using a non-custodial Ethereum smart contract. [(https://www.investopedia.com/terms/u/ugma.asp)]
-
-This smart contract will act as an non-custodial wallet in which Ether can be deposited just by sending Eth to the constract address. The beneficiary of the wallet will only be able to request withdrawals 16 years after this wallet was created and at 18 years the beneficiary can withdraw all the Ether and close the wallet.
-
 ## Contract life cycle:
 An Owner (family member/ friend) creates the CGTMWallet by inserting the approvers addresses, the amount of approvers needed and the address of the beneficiary
 
@@ -31,7 +31,7 @@ An Owner (family member/ friend) creates the CGTMWallet by inserting the approve
 - At age 18, the Beneficiary is eligible to withdraw the full Eth balance in one transaction which will be sent to the initial address of the beneficiary which the Owner inserted when the CGTMWallet was created. Approval of family members are not needed. This will also close (selfdestruct) the CGTMWallet.
 - When the 'close wallet' function is called the life cycle of the contract ends.  
 
-# Development (dependemcies and technology):
+## Development (dependemcies and technology):
 Prerequisites:
 - Truffle and Ganache-CLI and/or Ganache GUI have been installed
 - NodeJS has been installed
@@ -44,10 +44,11 @@ Prerequisites:
       - Draw.io Integration
 - Git has also been installed and integrated with VSCode
 - OpenZeppelin Library v3.3
+- OpenZeppelin Test Helpers
 - Metamask
-- React
+- React (create-react-app)
 - Bootstrap
-
+- React-Bootstrap
 
 ### Initial setup
 1) Create Root folder directory for new project. (```$ git init``` if not using VSCode as editor)
@@ -112,154 +113,9 @@ Now you can start interacting with your smart contract.
 4) Once you are ready to test, Run ```$ truffle test``` (ensure that you have a local blockchain running as setup before)
 
 ## Frontent Server
-- In the 'client' folder, run ```npm start``` to start the server.
-
+- In the 'client' folder, run ```npm start``` to start the server. (ensure correct node_modules are installed)
 
 ## Future Development
 - Intergrate with DeFi platforms to increase yield over 18 years while the contract is active
 - Chnage from web3 to ethersjs
 - Add ENS capabilityfor human-readable names to Ethereum addresses.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
