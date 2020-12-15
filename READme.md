@@ -1,6 +1,8 @@
 # ConsenSys Final Project 2020 : Crypto Gifts To Minors Wallet (CGTMWallet)
 *MultiSig-Ownable-TimeLock Wallet*  
 
+![alt text](https://github.com/HicoMcD/Crypto-Gifts-To-Minors-Wallet-Dapp/blob/main/EthMoonGirl.jpeg)
+
 ## Description: :page_with_curl:
 Designed to imitate the 'Uniform Gifts to Minors Act' by using a non-custodial Ethereum smart contract. [(https://www.investopedia.com/terms/u/ugma.asp)]
 
