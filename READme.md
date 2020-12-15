@@ -31,7 +31,7 @@ An Owner (family member/ friend) creates the CGTMWallet by inserting the approve
 - At age 18, the Beneficiary is eligible to withdraw the full Eth balance in one transaction which will be sent to the initial address of the beneficiary which the Owner inserted when the CGTMWallet was created. Approval of family members are not needed. This will also close (selfdestruct) the CGTMWallet.
 - When the 'close wallet' function is called the life cycle of the contract ends.  
 
-## Development (dependemcies and technology):
+## Development (dependemcies and technology): :gear: :hammer_and_wrench: :nut_and_bolt:
 Prerequisites:
 - Truffle and Ganache-CLI and/or Ganache GUI have been installed
 - NodeJS has been installed
