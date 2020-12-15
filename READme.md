@@ -1,25 +1,25 @@
 # ConsenSys Final Project 2020 : Crypto Gifts To Minors Wallet (CGTMWallet)
 *MultiSig-Ownable-TimeLock Wallet*  
-:page_facing_up:	
-## Description:
+
+## Description: :page_with_curl:
 Designed to imitate the 'Uniform Gifts to Minors Act' by using a non-custodial Ethereum smart contract. [(https://www.investopedia.com/terms/u/ugma.asp)]
 
 This smart contract will act as an non-custodial wallet in which Ether can be deposited just by sending Eth to the constract address. The beneficiary of the wallet will only be able to request withdrawals 16 years after this wallet was created and at 18 years the beneficiary can withdraw all the Ether and close the wallet.
 
-## Stakeholders
-**Owner (Family Member or friend)** : 
+## Stakeholders  
+**Owner (Family Member or friend)** : :adult:
 - Family member or friend, also an approver.
 
-**Beneficiary (Minor)** : 
+**Beneficiary (Minor)** : :baby:
 - Minor which is chosen by the Owner. 
 - Can request a withdrawal to be approved at age 16. 
 - Can withdraw all funds and close the wallet at age 18 without any approval.
 
-**Approvers (Family Members or Friends. 10 or less)** : 
-- Amount of family members are chosen by the owner.
-- Amount of approvals by family members are also chosen by the owner.
+**Approvers (Family Members or Friends)** : :family_man_woman_girl:
+- Amount of family members are chosen by the owner. Maximum 10.
+- Amount of approvals by family members are also chosen by the owner. At least 1 and maximum 9.
 
-## Contract life cycle:
+## Contract life cycle: :arrows_clockwise:
 An Owner (family member/ friend) creates the CGTMWallet by inserting the approvers addresses, the amount of approvers needed and the address of the beneficiary
 
 - Once the CGTMWallet is created, anyone can contribute Ether into the wallet by sending Eth to the contract wallet address. 
