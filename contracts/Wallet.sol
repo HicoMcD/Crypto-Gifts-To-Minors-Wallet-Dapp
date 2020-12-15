@@ -88,8 +88,8 @@ contract Wallet is Ownable {
     /// @dev
     /// @param id is the indexed transaction id number
     function approveTransfer(uint id) public onlyApprover() stopInEmergency() timeLock16() { 
-        require(transfers[id].sent == false, 'transfer has already been sent');
-        require(approvals[msg.sender][id] == false, 'cannot approve transfer twice');
+        require(transfers[id].sent == false, 'Transfer has already been sent');
+        require(approvals[msg.sender][id] == false, 'Cannot approve transfer for the second time');
         emit WithdrawalApproved(id);
         
         approvals[msg.sender][id] = true;
@@ -139,7 +139,7 @@ contract Wallet is Ownable {
                 allowed = true;
             }
         }
-        require(allowed == true, 'only approver allowed');
+        require(allowed == true, 'Valid approvers only.');
         _;
     }
 
@@ -149,7 +149,7 @@ contract Wallet is Ownable {
     }
 
     modifier timeLock16() {
-        require(block.timestamp > (creationTime + 835 weeks), 'Beneficiary is not 16 years old.');
+        require(block.timestamp > (creationTime + 30 seconds 835 weeks), 'Beneficiary is not 16 years old.');
         _;
     }
       
