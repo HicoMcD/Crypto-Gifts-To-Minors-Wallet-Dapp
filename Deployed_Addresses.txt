@@ -1,0 +1,32 @@
+Network:       		Rinkeby  
+Network ID:     		4
+Deployed Address: 	0xD20791C4C2c168B594c9CE64b3C04Ca478aE61e7
+Verified on Network:	      	Yes, image in folder
+   
+There is a bug with OpenZeppelin's import contracts and verifying the contract on the Rinkeby Network. 
+I had to insert the OpenZepplelin contracts (Ownable.col and Context.sol) into the contracts folder manually. 
+The contract was also deployed with no constructor arguments.
+
+Compiling your contracts...
+===========================
+> Compiling ./contracts/Wallet.sol
+> Artifacts written to /home/h1c0/Documents/ConsenSys 2020/FINAL PROJECT Github/Crypto_Gifts_To_Minors_Wallet_Dapp/client/src/contracts
+> Compiled successfully using:
+   - solc: 0.6.0+commit.26b70077.Emscripten.clang
+
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 10000000 (0x989680)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x9d1bd3d8abaeaa555feed9063220dc1f0ca4a3409123bb8286c27463893d1924
+   
