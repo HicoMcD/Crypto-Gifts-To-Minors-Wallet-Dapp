@@ -149,7 +149,7 @@ contract Wallet is Ownable {
     }
 
     modifier timeLock16() {
-        require(block.timestamp > (creationTime + 30 seconds 835 weeks), 'Beneficiary is not 16 years old.');
+        require(block.timestamp > (creationTime + 835 weeks), 'Beneficiary is not 16 years old.');
         _;
     }
       
