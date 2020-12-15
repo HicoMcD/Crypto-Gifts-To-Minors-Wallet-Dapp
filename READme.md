@@ -117,5 +117,7 @@ Now you can start interacting with your smart contract.
 
 ## Future Development
 - Intergrate with DeFi platforms to increase yield over 18 years while the contract is active
-- Chnage from web3 to ethersjs
 - Add ENS capabilityfor human-readable names to Ethereum addresses.
+
+## Technology changes
+- Change from web3 to ethersjs
