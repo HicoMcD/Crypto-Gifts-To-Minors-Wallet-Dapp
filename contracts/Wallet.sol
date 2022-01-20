@@ -1,7 +1,6 @@
 //SPDX-License-Identifier: Open Source
 
-pragma solidity 0.6.0;
-pragma experimental ABIEncoderV2;
+pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 
@@ -38,7 +37,7 @@ contract Wallet is Ownable {
     /// @param _approvers addresses which are approvers of the Multi-Sig
     /// @param _quorum amount of approvers needed to send transfer
     /// @param _beneficiary only address which can request a 'send transfer' and 'close wallet' function.
-    constructor(address[] memory _approvers, uint _quorum, address payable _beneficiary) public validRequirement(_approvers.length, _quorum) {
+    constructor(address[] memory _approvers, uint _quorum, address payable _beneficiary) validRequirement(_approvers.length, _quorum) {
         approvers = _approvers;
         quorum = _quorum;
         beneficiary = _beneficiary;
